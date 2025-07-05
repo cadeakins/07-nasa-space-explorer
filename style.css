@@ -137,7 +137,7 @@ button:hover {
   justify-content: center;
   background: #e6eaf3;
   border-radius: 12px;
-  min-height: 320px;
+  min-height: 60vh;
 }
 
 
@@ -174,14 +174,14 @@ button:hover {
 .gallery-item h3 {
   color: #0032a0;
   font-size: 1.1em;
-  margin: 8px 0 2px 0;
+  margin: 6px 0 2px 0;
   font-weight: 700;
   text-align: center;
 }
 
 .gallery-item p {
-  margin-top: 6px;
-  padding: 0 5px;
+  margin-top: 2px;
+  padding: 0 3px;
   font-size: 15px;
   color: #212121;
   text-align: center;
@@ -391,6 +391,15 @@ button:hover {
   .gallery-item img {
     height: 140px;
     border-radius: 8px;
+  }
+  .gallery-item h3 {
+    margin: 4px 0 0 0;
+    font-size: 1em;
+  }
+  .gallery-item p {
+    margin-top: 2px;
+    padding: 0 2px;
+    font-size: 14px;
   }
   .modal-content {
     padding: 14px 2vw 14px 2vw;
