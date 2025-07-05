@@ -52,7 +52,7 @@ modal.addEventListener('click', (event) => {
 //Listen for button clicks
 getImagesButton.addEventListener('click', async () => {
   //Loading message
-  gallery.innerHTML = `<p> 🔄 Loading space photos…`;
+  gallery.innerHTML = `<p>🔄 Loading space photos…<\p>`;
 
   //Get the start and end dates from the input fields
   const startDate = startInput.value;

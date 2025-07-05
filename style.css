@@ -31,6 +31,7 @@ body {
   box-shadow: 0 8px 32px rgba(0,50,160,0.10);
   padding: 32px 24px 32px 24px;
   margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 /* Header */
@@ -139,6 +140,7 @@ button:hover {
   min-height: 320px;
 }
 
+
 /* Gallery items */
 .gallery-item {
   flex: 0 1 31%;
@@ -196,6 +198,13 @@ button:hover {
 .placeholder-icon {
   font-size: 48px;
   margin-bottom: 20px;
+}
+
+.gallery p {
+  flex: 1 1 100%;
+  text-align: center;
+  padding: 40px;
+  color: #0032a0;
 }
 
 /* Modal styles */
@@ -306,8 +315,16 @@ button:hover {
 
 /* Responsive adjustments */
 @media (max-width: 700px) {
+  html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
   .container {
-    padding: 10px 2vw 20px 2vw;
+    padding: 10px 0 20px 0;
+    max-width: 100vw;
+    border-radius: 0;
+    box-shadow: none;
+    min-height: 90vh;
   }
   .site-header {
     flex-direction: column;
@@ -315,25 +332,30 @@ button:hover {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 10px;
+    border-bottom-width: 2px;
   }
   .logo {
-    width: 90px;
-    min-width: 60px;
-    max-width: 30vw;
+    width: 70px;
+    min-width: 50px;
+    max-width: 22vw;
     margin: 0 auto 8px auto;
     display: block;
+    float: none;
   }
   h1 {
     font-size: 1.1em;
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
+    color: #0032a0;
   }
   .filters {
     flex-direction: column;
     gap: 10px;
-    padding: 0 4vw;
+    padding: 0 6vw;
     align-items: center;
+    width: 100vw;
+    box-sizing: border-box;
   }
   input[type="date"],
   button {
@@ -343,17 +365,20 @@ button:hover {
     box-sizing: border-box;
     margin: 0 auto;
     display: block;
+    max-width: 100%;
   }
   button {
     margin: 0 auto;
     display: block;
-    max-width: 300px;
+    max-width: 320px;
   }
   .gallery {
     flex-direction: column;
     gap: 16px;
     padding: 12px 0;
     align-items: center;
+    width: 100vw;
+    box-sizing: border-box;
   }
   .gallery-item {
     min-width: 0;
@@ -361,6 +386,11 @@ button:hover {
     width: 92vw;
     margin: 0 auto;
     box-sizing: border-box;
+    border-radius: 10px;
+  }
+  .gallery-item img {
+    height: 140px;
+    border-radius: 8px;
   }
   .modal-content {
     padding: 14px 2vw 14px 2vw;
